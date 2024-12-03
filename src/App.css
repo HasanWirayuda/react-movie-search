@@ -1,0 +1,68 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.movie-search {
+  height: 48px;
+  font-size: 24px;
+  margin-bottom: 32px;
+  padding: 16px;
+  font-weight: bold;
+  width: 470px;
+}
+
+.movie-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie-wrapper {
+  width: 300px;
+  background-color: antiquewhite;
+  color: black;
+}
+
+.movie-title {
+  height: 40px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.movie-date {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.movie-rate {
+  color: red;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}
