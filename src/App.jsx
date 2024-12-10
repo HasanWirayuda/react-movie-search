@@ -16,15 +16,24 @@ const App = () => {
     return popularMovies.map((movie, i) => {
       return (
         <div className="movie-wrapper" key={i}>
-          <div className="movie-title">{movie.title}</div>
+          <div className="movie-title">
+            <p>{movie.title}</p>
+          </div>
           <img
-            src={`${import.meta.env.VITE_BASEIMGURL}/${movie.poster_path}`}
+            src={
+              movie.poster_path
+                ? `${import.meta.env.VITE_BASEIMGURL}/${movie.poster_path}`
+                : "/img/default-movie.jpg"
+            }
             alt="Movie Poster"
             className="movie-image"
             width={300}
+            height={450}
           />
           <div className="movie-date">release: {movie.release_date}</div>
-          <div className="movie-rate">{movie.vote_average}</div>
+          <div className="movie-rate">
+            {parseFloat(movie.vote_average).toFixed(1)}
+          </div>
         </div>
       );
     });

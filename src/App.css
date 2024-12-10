@@ -30,9 +30,12 @@
 }
 
 .movie-title {
-  height: 40px;
-  margin-top: 10px;
+  height: 57px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
 }
 
 .movie-date {
